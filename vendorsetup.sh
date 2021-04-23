@@ -58,6 +58,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export FOX_USE_ZIP_BINARY=1
 	export FOX_REPLACE_BUSYBOX_PS=1
 	export OF_SKIP_MULTIUSER_FOLDERS_BACKUP=1
+	export OF_RUN_POST_FORMAT_PROCESS=1
 	
     # Remove things that this device doesn't support
 	export FOX_DISABLE_APP_MANAGER=1
