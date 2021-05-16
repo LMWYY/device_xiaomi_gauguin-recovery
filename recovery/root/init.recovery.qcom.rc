@@ -129,3 +129,14 @@ on property:vendor.sys.listeners.registered=true
     start keymaster-4-0
     start gatekeeper-1-0
     start servicemanager
+    restart fastbootd
+
+service prepdecrypt /sbin/prepdecrypt.sh
+    user root
+    group root
+    disabled 
+    oneshot
+    seclabel u:r:recovery:s0
+
+on property:ro.crypto.state=encrypted && property:ro.boot.dynamic_partitions=true
+    start prepdecrypt
