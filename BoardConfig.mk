@@ -134,3 +134,7 @@ TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
 
 #Chinese language support
 TW_EXTRA_LANGUAGES := true
+
+# For MIUI 12.x Android 11 decryption - uncomment these two lines if your build/core/Makefile has not been patched to do it
+BOARD_AVB_RECOVERY_ADD_HASH_FOOTER_ARGS += \
+    --prop com.android.build.boot.security_patch:$(PLATFORM_SECURITY_PATCH)
