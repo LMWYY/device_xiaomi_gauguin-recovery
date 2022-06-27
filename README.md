@@ -6,4 +6,6 @@ OrangeFox Device tree for Mi 10T Lite
 2. export ALLOW_MISSING_DEPENDENCIES=true
 3. export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER=1
 4. export LC_ALL="C"
-5. lunch omni_gauguin-eng && mka recoveryimage
+5. lunch twrp_gauguin-eng && mka recoveryimage
+
+#charitokoox

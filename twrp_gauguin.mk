@@ -22,13 +22,13 @@ $(call inherit-product, device/xiaomi/gauguin/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/twrp/config/common.mk)
 
 #PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/root,recovery/root)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := gauguin
-PRODUCT_NAME := omni_gauguin
+PRODUCT_NAME := twrp_gauguin
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 10T Lite
 PRODUCT_MANUFACTURER := Xiaomi
